@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="RetryFailedTestSuite">
+<listeners>
+	<listener class-name="retryLogic.MyTransformer"></listener>
+</listeners>
+
+  <test name="RetryMultipleFailedTestCases">
+    <classes>
+      <class name="retryLogic.MyTests"/> <!-- if we give retryLogic.* it will applicable for all the classes -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

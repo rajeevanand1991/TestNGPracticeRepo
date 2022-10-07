@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FB Test Suite" verbose="1"> <!-- verbose value 4 or 5 is recommended -->
+  <test name ="FB title Testing" thread-count="5" >
+    <classes>
+ 
+      <class name="verbose.FBTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
